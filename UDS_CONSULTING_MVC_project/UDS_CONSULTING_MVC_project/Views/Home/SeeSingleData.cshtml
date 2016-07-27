@@ -1,0 +1,20 @@
+﻿@model UDS_CONSULTING_MVC_project.Models.Data
+
+@{
+    ViewBag.Title = "SeeSingleData";
+}
+
+<div class="container">
+    <div class="text-primary well">
+        <h1>@ViewBag.LoggedUserName</h1>
+    </div>
+    <div class="well">
+        <img src="@ViewBag.Image" style="float:left; border:15px; border-color:white" />
+        <h3>@Model.name, @Model.gender</h3><br />
+        @Model.company<br />
+        @Model.email<br />
+        @Model.address<br />
+        @ViewBag.dataTime<br />
+        <p>@Model.about</p>
+    </div>
+</div>

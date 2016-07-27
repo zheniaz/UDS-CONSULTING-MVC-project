@@ -1,0 +1,22 @@
+[
+  {
+	"login": "test",
+	"password": "testpassword",
+	"name": "Test User"
+},
+{
+	"login": "acc1",
+	"password": "acc1pwsd",
+	"name": "Account"
+},
+{
+	"login": "acc2",
+	"password": "pwd",
+	"name": "Account 2"
+},
+{
+	"login": "acc3",
+	"password": "3acc",
+	"name": "Account III"
+}
+]

@@ -1,0 +1,41 @@
+﻿@model UDS_CONSULTING_MVC_project.Models.LoginModel
+
+@{
+    ViewBag.Title = "LogIn";
+}
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+
+            
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Login, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Login)
+                    @Html.ValidationMessageFor(model => model.Login)
+                </div>
+            </div>
+            
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Password)
+                    @Html.ValidationMessageFor(model => model.Password)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Log in" class="btn btn-default" />
+                </div>
+            </div>
+
+        </div>
+    }
+
